@@ -6,9 +6,9 @@
 <title>기타 코드 악보</title>
 <meta name="description" content="유튜브에 맞춰 재생하는 기타 코드·TAB 악보. 위쪽에 다음 코드 운지가 뜸.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 1v13' stroke='%23a8743f' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23a8743f'/%3E%3Ccircle cx='16' cy='24' r='7.5' fill='%23a8743f'/%3E%3Ccircle cx='16' cy='20' r='2.3' fill='%23fff'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="css/app.css?v=dd2a70968a">
+<link rel="stylesheet" href="css/app.css?v=6eb820945a">
 <!-- importmap -->
-<script type="importmap">{"imports":{"./js/audio.js":"./js/audio.js?v=dd2a70968a","./js/bridge.js":"./js/bridge.js?v=dd2a70968a","./js/chordbar.js":"./js/chordbar.js?v=dd2a70968a","./js/chords.js":"./js/chords.js?v=dd2a70968a","./js/dashboard.js":"./js/dashboard.js?v=dd2a70968a","./js/diagram.js":"./js/diagram.js?v=dd2a70968a","./js/drills.js":"./js/drills.js?v=dd2a70968a","./js/drillview.js":"./js/drillview.js?v=dd2a70968a","./js/dsp.js":"./js/dsp.js?v=dd2a70968a","./js/editor.js":"./js/editor.js?v=dd2a70968a","./js/fingering.js":"./js/fingering.js?v=dd2a70968a","./js/instrument.js":"./js/instrument.js?v=dd2a70968a","./js/lane.js":"./js/lane.js?v=dd2a70968a","./js/lyrics.js":"./js/lyrics.js?v=dd2a70968a","./js/main.js":"./js/main.js?v=dd2a70968a","./js/model.js":"./js/model.js?v=dd2a70968a","./js/pitchcolor.js":"./js/pitchcolor.js?v=dd2a70968a","./js/pitchgame.js":"./js/pitchgame.js?v=dd2a70968a","./js/pitchlane.js":"./js/pitchlane.js?v=dd2a70968a","./js/practice.js":"./js/practice.js?v=dd2a70968a","./js/records.js":"./js/records.js?v=dd2a70968a","./js/sheet.js":"./js/sheet.js?v=dd2a70968a","./js/site.js":"./js/site.js?v=dd2a70968a","./js/strumfit.js":"./js/strumfit.js?v=dd2a70968a","./js/strumgame.js":"./js/strumgame.js?v=dd2a70968a","./js/strums.js":"./js/strums.js?v=dd2a70968a","./js/strumview.js":"./js/strumview.js?v=dd2a70968a","./js/youtube.js":"./js/youtube.js?v=dd2a70968a"}}</script>
+<script type="importmap">{"imports":{"./js/audio.js":"./js/audio.js?v=6eb820945a","./js/bridge.js":"./js/bridge.js?v=6eb820945a","./js/chordbar.js":"./js/chordbar.js?v=6eb820945a","./js/chords.js":"./js/chords.js?v=6eb820945a","./js/dashboard.js":"./js/dashboard.js?v=6eb820945a","./js/diagram.js":"./js/diagram.js?v=6eb820945a","./js/drills.js":"./js/drills.js?v=6eb820945a","./js/drillview.js":"./js/drillview.js?v=6eb820945a","./js/dsp.js":"./js/dsp.js?v=6eb820945a","./js/editor.js":"./js/editor.js?v=6eb820945a","./js/fingering.js":"./js/fingering.js?v=6eb820945a","./js/instrument.js":"./js/instrument.js?v=6eb820945a","./js/lane.js":"./js/lane.js?v=6eb820945a","./js/lyrics.js":"./js/lyrics.js?v=6eb820945a","./js/main.js":"./js/main.js?v=6eb820945a","./js/model.js":"./js/model.js?v=6eb820945a","./js/pitchcolor.js":"./js/pitchcolor.js?v=6eb820945a","./js/pitchgame.js":"./js/pitchgame.js?v=6eb820945a","./js/pitchlane.js":"./js/pitchlane.js?v=6eb820945a","./js/practice.js":"./js/practice.js?v=6eb820945a","./js/records.js":"./js/records.js?v=6eb820945a","./js/sheet.js":"./js/sheet.js?v=6eb820945a","./js/site.js":"./js/site.js?v=6eb820945a","./js/strumfit.js":"./js/strumfit.js?v=6eb820945a","./js/strumgame.js":"./js/strumgame.js?v=6eb820945a","./js/strums.js":"./js/strums.js?v=6eb820945a","./js/strumview.js":"./js/strumview.js?v=6eb820945a","./js/youtube.js":"./js/youtube.js?v=6eb820945a"}}</script>
 <!-- /importmap -->
 </head>
 <body>
@@ -50,6 +50,8 @@
             <select data-set="upcoming"><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
           <label>한 줄 마디 수
             <select data-set="barsPerLine"><option value="0">자동</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+          <label class="roll-only" title="음 사이 세로 거리. 100%가 SPRED 기본 화면과 같음">세로 크기
+            <select data-set="rollZoom"><option>50</option><option>60</option><option>70</option><option>80</option><option>90</option><option value="100">100 (SPRED와 같음)</option><option>125</option><option>150</option><option>200</option></select> %</label>
           <div class="electric-opts chord-only" hidden>
             <hr>
             <label><input type="checkbox" data-set="power"> 일렉: 파워코드로 보기</label>
@@ -316,6 +318,6 @@
   </form>
 </dialog>
 
-<script type="module" src="js/main.js?v=dd2a70968a"></script>
+<script type="module" src="js/main.js?v=6eb820945a"></script>
 </body>
 </html>
